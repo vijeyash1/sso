@@ -1,0 +1,30 @@
+https://www.ory.sh/docs/getting-started/local-development#local-development
+
+
+ory tunnel --dev --project xenodochial-dewdney-qdzw45ve2w \
+  http://localhost:3001
+
+
+  https://github.com/atreya2011/go-kratos-test
+
+
+  After running the code, you can test its working by
+  following these steps:
+
+Open a web browser and navigate to http://localhost:3001/. This will trigger the handleMain function and redirect you to the authorization endpoint.
+Log in using your credentials and grant access to the requested scopes. This will redirect you back to the callback URL (http://localhost:3001/login/generic_oauth) with an authorization code in the URL query parameters.
+The handleCallback function will be triggered and will exchange the authorization code for an access token and a refresh token. It will then display the access token and refresh token on the page.
+
+
+Redirecting user to authorization endpoint:
+http://localhost:4000/oauth2/auth?client_id=
+850afbb5-1c82-416b-bd5f-07c28b4baf27&redirect_uri
+=http%3A%2F%2Flocalhost%3A3001%2Flogin%2Fgeneric
+_oauth&response_type=code&scope=openid&state=randomstate
+Received callback from authorization endpoint with state: randomstate
+Exchanging authorization code for access token
+Received access token and refresh token
+Redirecting user to authorization endpoint: http://localhost:4000/oauth2/auth?client_id=850afbb5-1c82-416b-bd5f-07c28b4baf27&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Flogin%2Fgeneric_oauth&response_type=code&scope=openid&state=randomstate
+Received callback from authorization endpoint with state: randomstate
+Exchanging authorization code for access token
+Received access token and refresh token
